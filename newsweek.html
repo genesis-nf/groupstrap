@@ -1,0 +1,496 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link rel="stylesheet" href="stylesn/style.css">
+  <title>Hello, world!</title>
+</head>
+
+<body>
+
+  <!============================= ENCABEZADO NEWSWEEK========================================!>
+    <header class="">
+      <div class="w-100">
+        <div class="d-none d-lg-block d-xl-block bg-danger">
+          <div class="d-flex justify-content-between header-lg col-12 align-items-center ">
+            <div class="col-2 ">
+              <div class="city-country d-flex flex-row flex-wrap align-items-center">
+                <img src="https://g.newsweek.com/img/weather/28.png" alt="cloudy image">
+                <p class="pl-2 font-weight-bolder text-white p-2"> 35° Mérida, MX</p>
+                <img class="p-1" src="https://g.newsweek.com/img/weather/ic-white-arrow.png" alt="arrow white">
+              </div>
+              <p class="text-white">Tue, May 26, 2020</p>
+            </div>
+            <div class="col-4">
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                y="0px" viewBox="0 0 395.6 60" style="enable-background: new 0 0 395.6 60;" xml:space="preserve">
+                <path class="principal-logo"
+                  d="M58.7,10.8h-5.6v48.3H42.8l-25.1-33v22.1h5.6v10.8H0V48.3h5.6V10.8H0V0h17.6L41,30.7V10.8h-5.6V0h23.2	L58.7,10.8L58.7,10.8z M95.8,38c0,0.9,0,1.8-0.1,2.7H70.3c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11	c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6C89.9,16.3,95.8,25.6,95.8,38 M159,27.3h-3.7	l-9.4,31.8h-12.5l-5.9-17.4l-5.3,17.4h-12.8L98.8,27.4h-3.7V16.6h22.1v10.7h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.6l5-16.9h-5.6V16.6	H159L159,27.3L159,27.3z M174.5,27.8c0,1.5,1.2,2.5,5.4,3.9l6,2c5.5,1.8,12.1,5.9,12.1,13.4c0,8.8-6.6,13-14.7,13	c-6.5,0-11.5-3.2-12.9-4.6V59h-10.8V44.4h10.6c0.3,4.8,4.6,7.3,8.5,7.3c3.2,0,4.7-1.4,4.7-3c0-2-1.2-3.1-6.5-4.8l-5.3-1.8	c-5.4-1.7-11.4-5.7-11.4-12.8c0-8.7,7.7-13.1,14.3-13.1c6.8,0,10.1,1.9,11.8,3.8l0.1-3.3H197v13.3h-11.2c-0.2-3.6-3.7-5.2-7.2-5.2	C175.8,24.8,174.5,26.1,174.5,27.8 M262.8,27.3h-3.7l-9.4,31.8h-12.5l-5.9-17.4L226,59.1h-12.8l-10.6-31.7h-3.7V16.6h22.1v10.7	h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.7l5-16.9h-5.6V16.6h18.5V27.3z M302,37.9c0,0.9,0,1.8-0.1,2.7h-25.4	c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1	c0-10.5,7-21.6,21-21.6C296.1,16.2,302,25.5,302,37.9 M343.9,37.8c0,0.9,0,1.8-0.1,2.7h-25.4c-0.7,8.2,2.4,10.6,7.1,10.6	c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6	C338,16.1,343.9,25.4,343.9,37.8 M389.9,59h-12.8l-13.3-17.3l-4.3,3.2v3.4h3.8V59h-19.6V48.3h3.7V10.6h-5.6V0h17.8v33.9l8.9-6.5	h-5.6V16.6h23.9v10.8h-3.7l-9.3,7l10.7,13.9h5.6L389.9,59L389.9,59z M395.6,56.6c0,0.5-0.1,0.9-0.4,1.2c-0.2,0.4-0.5,0.7-0.9,0.9	c-0.4,0.2-0.8,0.4-1.3,0.4c-0.5,0-0.9-0.1-1.2-0.4c-0.4-0.2-0.7-0.5-0.9-0.9c-0.2-0.4-0.4-0.8-0.4-1.2c0-0.5,0.1-0.9,0.4-1.2	c0.2-0.4,0.5-0.7,0.9-0.9c0.4-0.2,0.8-0.4,1.2-0.4c0.5,0,0.9,0.1,1.3,0.4c0.4,0.2,0.7,0.5,0.9,0.9	C395.5,55.8,395.6,56.2,395.6,56.6 M394.6,58c0.4-0.4,0.6-0.9,0.6-1.4c0-0.6-0.2-1-0.6-1.4s-0.9-0.6-1.4-0.6s-1,0.2-1.4,0.6	c-0.4,0.4-0.6,0.9-0.6,1.4c0,0.6,0.2,1,0.6,1.4c0.4,0.4,0.9,0.6,1.4,0.6S394.2,58.4,394.6,58 M393.6,56.8c0.1,0.1,0.2,0.1,0.2,0.1	c0.1,0.1,0.2,0.2,0.2,0.3c0,0,0.2,0.3,0.4,0.8h-0.8c-0.3-0.5-0.4-0.8-0.5-0.9c-0.1-0.1-0.2-0.2-0.3-0.2c0,0-0.1,0-0.1,0v1.1h-0.6	v-2.6h1.2c0.4,0,0.6,0.1,0.7,0.2c0.2,0.2,0.2,0.3,0.2,0.6c0,0.2-0.1,0.4-0.2,0.5C393.9,56.6,393.8,56.7,393.6,56.8 M393.5,56.3	c0.1-0.1,0.1-0.2,0.1-0.3s-0.1-0.2-0.1-0.3c-0.1-0.1-0.2-0.1-0.4-0.1h-0.3v0.7h0.3C393.3,56.4,393.4,56.4,393.5,56.3 M318.4,33.5	h13.9c0-6-3.9-8.4-6.8-8.4C322.1,25.2,318.6,27.9,318.4,33.5 M276.5,33.6h13.9c0-6-3.9-8.4-6.8-8.4C280.3,25.2,276.8,28,276.5,33.6 M70.3,33.7h13.9c0-6-3.9-8.4-6.8-8.4C74.1,25.3,70.6,28.1,70.3,33.7">
+                </path>
+              </svg>
+            </div>
+            <div class="col-2 d-flex align-self-end pb-3 align-items-center">
+              <p class="text-white font-weight-bolder mr-2 ml-2">LOGIN</p>
+              <button class="btn-subscribe btn-warning font-weight-bolder"> <b>SUBSCRIBE</b></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+    <!============================= BARRA DE NAVEGATION========================================!>
+
+      <nav class="navbar border-primary align-items-center">
+        <div><a class="navbar-brand">U.S.</a></div>
+        <div><a class="navbar-brand">Word</a></div>
+        <div><a class="navbar-brand">Business</a></div>
+        <div><a class="navbar-brand">Tech & Science</a></div>
+        <div><a class="navbar-brand">Culture</a></div>
+        <div><a class="navbar-brand">Newsweek</a></div>
+        <div><a class="navbar-brand">Sports</a></div>
+        <div><a class="navbar-brand">Opinion</a></div>
+        <div><a class="navbar-brand">Experts</a></div>
+        <div><a class="navbar-brand">Education</a></div>
+        <div><a class="navbar-brand">Podcasts</a></div>
+
+        <form class="form-inline">
+          <input class="col mr-sm-2 border-light" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0 border-white text-black-50" type="submit">Search</button>
+        </form>
+      </nav>
+
+      <!============================= TRENDING========================================!>
+
+        <ul class="nav fw-bolder">
+          <li class="nav-item">
+            <a class="nav-link active text-dark" aria-current="page" href="#">TRENDING</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="#">JOE BIDEN</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">DONALD TRUMP</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">CORONAVIRUS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">VACCINE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">GAVIN NEWSOM</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">RON DESANTIS</a>
+          </li>
+        </ul>
+
+
+
+        <ul class="list-group w-25">
+          <li class="list-group-item disabled fw-bolder" aria-disabled="true">FEATURED STORIES</li>
+
+          <li class="list-group-item">
+
+            <div class="card" style="width: 18rem; border: none;">
+              <img src="img/new.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">White House Resisting National Pressure Campaign on Manchin, Sinema</h5>
+                <p class="card-text">White House aides noted that Democratic Senators Kyrsten Sinema and Joe Manchin do
+                  not usually respond to national political pressure.</p>
+              </div>
+            </div>
+
+            <div class="card" style="width: 18rem; border: none;">
+              <img src="img/world.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">With Naming of New Atomic Chief, Is a Nuclear Taliban Possible?</h5>
+                <p class="card-text">"There has been no decision so far on the development of nuclear weapons," one
+                  Taliban official told Newsweek on the condition of anonymity.</p>
+              </div>
+            </div>
+
+
+
+            <div class="card" style="width: 18rem; border: none;">
+              <img src="img/china.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">China Seeks to Avoid Evergrande Default With Purchase of Stake in Bank</h5>
+                <p class="card-text">Under the transaction, the Chinese state becomes the largest shareholder of the
+                  bank that has suffered due to Evergrande's financial woes.</p>
+              </div>
+            </div>
+
+            <div class="card" style="width: 18rem; border: none;">
+              <img src="img/us.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">U.S. Facing Over Twice as Many Domestic Terror Threats as Foreign, FBI Says</h5>
+                <p class="card-text">The U.S. is approaching more than 2,700 domestic terrorism threats, compared with
+                  under 1,000 threats from foreign entities, the bureau says.</p>
+              </div>
+            </div>
+
+            <div class="card" style="width: 18rem; border: none;">
+              <img src="img/searching.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">A Full Timeline of Brian Laundrie's Movements in Gabby Petito Case</h5>
+                <p class="card-text">More details have emerged that add to a timeline of Laundrie's known appearances.
+                </p>
+              </div>
+            </div>
+
+
+          <li class="list-group-item">
+            <div class="card-body">
+              The U.S. Budget Crisis Explained in Under 3 Minutes
+            </div>
+          </li>
+
+          <li class="list-group-item">
+            <div class="card" style="width: 18rem; border: none;">
+              <img src="img/podcasts.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">The Daily Break</h5>
+                <p class="card-text">Kerry Kennedy, lawyer, author, and daughter of Robert F Kennedy, sits down with
+                  Naveed Jamali to talk about everything from the humanitarian crisis on the southern border to prison
+                  reform.</p>
+              </div>
+            </div>
+
+            <div class="card" style="width: 18rem ; border: none;">
+              <img src="img/americas-best-banks-2022.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">America's Best Banks 2022</h5>
+                <p class="card-text">To help you make sense of the new banking environment and find an institution that
+                  best suits your needs, Newsweek has partnered with LendingTree for our annual Best Banks rankings.</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+
+        <!============================= BODY RIGHT========================================!>
+
+
+
+
+          <div class="card w-25 p-3">
+            <div class="card" style="width: 100%; margin-bottom: 10px;">
+              <img src="img/mariano-diaz-7F65HDP0-E0-unsplash-1.jpeg" class="card-img-top " alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Brazil: Reform and Investment Driving Growth</h5>
+                <p class="card-text">The International Monetary Fund has forecast that Brazil will achieve stellar
+                  growth of 5.3% in 2021, with the organisation's most recent consultation on the country noting that
+                  “good policies had positioned the Brazilian economy to take off in 2020” before the pandemic hit.</p>
+              </div>
+            </div>
+
+            <form class="row g-2 text-center margin-bottom: 10px;">
+              <p class="g-2 fw-bolder">GET THE BEST OF NEWSWEEK VIA EMAIL</p>
+              <label for="staticEmail2" class="visually-hidden">Email</label>
+              <input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="email@example.com">
+              <label for="inputPassword2" class="visually-hidden">Password</label>
+              <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+              <button type="submit" class="btn btn-danger mb-3">FREE SING UP</button>
+            </form>
+
+            <div class="card" style="width: 100%; margin-bottom: 10px;">
+              <img src="img/residencia_permanente_Panama_para_chilenos.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Inspiring Chile</h5>
+                <p class="card-text">Discover how Chile has responded to change with multiple transformative projects,
+                  which seek to make it a more sustainable country that leaves a mark on science and knowledge.</p>
+              </div>
+            </div>
+
+            <div class="card" style="width: 100%; margin-bottom: 10px;">
+              <img src="img/americas-best-nursing-homes-2022.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">America's Best Nursing Homes 2022</h5>
+                <p class="card-text">This year's ranking identifies the nation's top 450 nursing homes based on three
+                  critical criteria: overall performance data, peer recommendations and each facility's handling of
+                  COVID-19.</p>
+              </div>
+            </div>
+
+            <div class="card" style="width: 100%; margin-bottom: 10px;">
+              <img src="img/worlds-best-specialized-hospitals-2022-cardiology.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">World's Best Specialized Hospitals 2022</h5>
+                <p class="card-text">SThis ranking features the top 250 hospitals for cardiology and oncology, the top
+                  150 for cardiac surgery and pediatrics and the top 125 each in endocrinology, gastroenterology,
+                  orthopedics, neurology, neurosurgery and pulmonology.</p>
+              </div>
+            </div>
+
+            <div class="card" style="width: 100%; margin-bottom: 10px;">
+              <img src="img/americas-best-customer-service-2022.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">America's Best Customer Service 2022</h5>
+                <p class="card-text">Newsweek has partnered with global data research firm Statista to identify the
+                  stores that consistently provide the Best Customer Service 2022.</p>
+              </div>
+            </div>
+
+            <div class="card" style="width: 100%; margin-bottom: 10px;">
+              <img src="img/descarga.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">America's Best Addiction Treatment Centers 2021</h5>
+                <p class="card-text">Newsweek has partnered with Statista to rank the 300 best U.S. treatment facilities
+                  that focus on addiction.</p>
+              </div>
+            </div>
+
+            <div class="card" style="width: 100%; margin-bottom: 10px;">
+              <img src="img/americas-best-eye-doctors-2021.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">America’s Best Eye Doctors 2021</h5>
+                <p class="card-text">Taking care of your eyes is important and finding the right doctors can make a big
+                  difference. Newsweek partnered with Statista to find the best eye doctors in the United States.</p>
+              </div>
+            </div>
+
+
+
+          </div>
+
+
+
+
+          <!============================= BODY CENTER========================================!>
+
+            <div class="card p-1">
+              <img src="img/congres-biden-infrastructure-vote.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Biden's Domestic Agenda on the Line as House Punts Infrastructure Vote</h5>
+                <p class="card-text pb-5" style="border-bottom: 2px solid rgb(215, 215, 215);">A key piece of President
+                  Joe Biden's agenda has stalled in the U.S. House, as Democratic leaders again delayed a vote on a $1.2
+                  trillion infrastructure package amid partisan in-fighting.</p>
+              </div>
+
+
+
+              <div class="card mb-3" style="width: 100%; padding: 1px; border: none;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="img/15-republicans-shutdown.webp" class="img-fluid rounded-start" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Full List of 15 Republican Senators Who Voted to Avoid a Government
+                        Shutdown</h5>
+                      <p class="card-text">Mitch McConnell and Lindsey Graham are among those who approved the
+                        short-term government funding bill that keeps federal agencies open until December 3.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="title border-white text-secondary fw-bolder">
+                <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">MY TURN</p>
+              </div>
+
+
+              <div class="card-group">
+                <div class="card" style="border: none; font-size: 15px; color: rgb(89, 89, 89); ">
+                  <img src="img/bobby-holland-hanton-chris-hemsworth.webp" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">'I'm Chris Hemsworth's Stunt Double—He's Like a Brother To Me'</h5>
+                  </div>
+                </div>
+                <div class="card" style="border: none; font-size: 15px; color: rgb(89, 89, 89);padding: 3px; ">
+                  <img style="height: 33%;  " src="img/gunna-opens-his-free-grocery-store.webp" class="card-img-top"
+                    alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">'We Opened a Free Grocery Store in a School'</h5>
+                  </div>
+                </div>
+                <div class="card" style="border: none; font-size: 15px; color: rgb(89, 89, 89);">
+                  <img src="img/zapatillas-cañamo.jpeg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">'I'm 77, I Started a Sneaker Company With My Grandson'</h5>
+                  </div>
+                </div>
+              </div>
+
+              <div class="title border-white text-secondary fw-bolder">
+                <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">CULTURE & TRAVEL
+                </p>
+              </div>
+
+
+              <div class="card-group">
+                <div class="card" style="border: none; font-size: 15px; color: rgb(89, 89, 89); ">
+                  <img style="height: 33%;  " src="img/nakie-portable-recycled-hammock.jpeg" class="card-img-top"
+                    alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Sustainable Travel Products You Will Absolutely Love</h5>
+                  </div>
+                </div>
+                <div class="card" style="border: none; font-size: 15px; color: rgb(89, 89, 89);padding: 3px; ">
+                  <img style="height: 33%;  " src="img/cul-map-reopening-banner.jpeg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Culture Is Back: Exhibits, Museums and More Open This Fall</h5>
+                  </div>
+                </div>
+                <div class="card" style="border: none; font-size: 15px; color: rgb(89, 89, 89);">
+                  <img style="height: 33%;  " src="img/cul-map-climate-action-jason-decaires-taylor.jpeg"
+                    class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">'Code Red' Climate Activism Art Around the World</h5>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="title border-white text-secondary fw-bolder">
+                <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">MORE STORIES</p>
+              </div>
+
+              <div class="card mb-1" style="width: 100%; border-left: none; border-right: none;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="img/AAP1QHJ.jpeg" class="img-fluid rounded-start" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Progressives Pleased After Beating Nancy Pelosi in Game of Chicken</h5>
+                      <p class="card-text">A House vote on the bipartisan infrastructure package was delayed on Thursday
+                        as progressives seek to tie it to the larger Build Back Better bill.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card mb-1" style="width: 100%; border-left: none; border-right: none;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="img/missing-family-arizona.jpeg" class="img-fluid rounded-start" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Family Camping at Arizona Lake Mysteriously Vanishes</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card mb-1" style="width: 100%; border-left: none; border-right: none;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="img/lava-ocean.jpeg" class="img-fluid rounded-start" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Largest Underwater Eruption Makes Volcano Bigger Than Empire State Building
+                      </h5>
+                      <p class="card-text">The seismic event that triggered the new seafloor volcano in the Indian Ocean
+                        generated over 11,000 detectable earthquakes since May 2018.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card mb-1" style="width: 100%; border-left: none; border-right: none;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="img/jerome-powell.jpeg" class="img-fluid rounded-start" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Inflation Rates Will Decline After Seeing Biggest Increase in 30 Years: Fed
+                      </h5>
+                      <p class="card-text">Federal Reserve Chair Jerome Powell said current inflation "is a function of
+                        supply side bottlenecks over which we have no control."</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card mb-1" style="width: 100%; border-left: none; border-right: none;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="img/hong-kong-pro-democracy.jpeg" class="img-fluid rounded-start" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">China Pledges to Continue 'One Country, Two Systems' Amid HK Crackdown</h5>
+                      <p class="card-text">"We will continue to fully and faithfully the principles of 'one country, two
+                        systems' ... and maintain long-term prosperity and stability," Li Keqiang said.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card mb-1" style="width: 100%; border-left: none; border-right: none;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="img/richard-watrous-capitol-riot.jpeg" class="img-fluid rounded-start" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Capitol Riot Suspect Said He Followed Donald Trump's Orders</h5>
+                      <p class="card-text">Richard Watrous told the FBI he went to the Capitol "as soon as" former
+                        President Donald Trump had finished making his speech.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card mb-1" style="width: 100%; border-left: none; border-right: none;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="img/defense-secretary-austin.jpeg" class="img-fluid rounded-start" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">National Guard and Army See Increases in Suicide Rates</h5>
+                      <p class="card-text">"Suicide rates among our service members and military families are still too
+                        high, and the trends are not going in the right direction," Defense Secretary Lloyd Austin said.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card mb-3" style="width: 100%; border-left: none; border-right: none;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="img/turkey-demands-fighter-jets-us.jpeg" class="img-fluid rounded-start" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Turkey Demands U.S. Deliver Fighter Jets or Return $1.4 Billion Payment
+                      </h5>
+                      <p class="card-text">"We did not—and do not—earn this money easily," Erdogan said. "Either they
+                        will give us our planes or they will give us the money."</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+
+            </div>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
